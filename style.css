@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plain Light";
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    position: relative;
+    background-color: #111;
+}
+
+#crsr{
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    position: fixed;
+    z-index:9;
+    border: 2px solid rgb(230, 226, 226);
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    position: fixed;
+    z-index: 99;
+    padding: 20vh 10vw;
+}
+.line{
+    line-height:17vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap : 3vw
+}
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+#line1-part1 h5, #line1-part1 h6{
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: "Silk Serif";
+}
+
+#line1-part1 h5{
+    width: 5vw;
+    text-align: right;
+
+}
+
+
+.line h1{
+    font-size: 6.7vw;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.line h2{
+    font-size: 6.6vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity : 0;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+#line1-part2 h6{
+    position: absolute;
+    left: 25%;
+    bottom : 15%;
+    width: 150px;
+    line-height: 2.5vh;
+    font-family: "Plain Light";
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+@keyframes anime {
+    0%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 1;
+    }
+    47%{
+        font-family: "Plain Light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 0;
+    }
+    50%{
+        font-family: "Silk Serif";
+        color: transparent;
+        opacity : 1;
+    }
+    100%{
+        font-family: "Silk Serif";
+        color: transparent;
+        opacity: 0;
+    }
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    
+}
+
+#page1 #nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.3vw 8.4vw;
+}
+
+#nav #nav-part2{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 3vw;
+}
+#nav-part2 h4{
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+.Hero{
+    width: 72%;
+    height: fit-content;
+    margin-left: 28%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: baseline;
+}
+.Hero h1{
+    font-size: 7.5vw;
+    font-weight: 600;
+    line-height: 1vh;
+}
+.Hero h1:nth-child(1){
+    margin-top: 7vw;
+}
+
+.Hero h1{
+    font-size: 7.5vw;
+    font-weight: 600;
+    line-height: 1vh;
+}
+
+#hero3 {
+    margin-bottom: 3vh;
+}
+#hero3 span{
+    border-bottom: 0.5vw solid white;
+    transition: all ease 0.2s;
+}
+
+#hero3 span:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 100;
+    border-bottom: none;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    padding-top: 12vh;
+    position: relative;
+
+}
+
+#video-container{
+    height : 68vh;
+    width : 70vw;
+    position: relative;
+    left : 28.5%;
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+}
+
+#video-container img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top : 0;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-cursor{
+    background-color: #FFA63D;
+    height: 8.5vw;
+    width: 8.5vw;
+    border-radius: 50%;
+    position : absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top : -12%;
+    left : 80%;
+    z-index: 98;
+}
+#video-cursor i{
+      font-size: 6vw;
+      left : 50%
+
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color:rgb(31, 31, 31);
+    position: relative;
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color:rgb(31, 31, 31);
+}
+
+
